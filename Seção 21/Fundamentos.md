@@ -8,21 +8,24 @@ main() {
     print('Olá Dart!');
 }
 ```
-## Variáveis
+## Tipo de Variáveis
 - int =  utilizado para o armazenamento de qualquer número inteiro.
 - double = utilizado para o armazenamento de números de pontos flutuantes. 
 - var = vai inferir o valor colocado.
 - final = Uma variável ou atributo final pode ser inicializada em algum momento após a sua declaração, porém uma vez atribuído um valor, este não poderá mais ser alterado.
 - const = Utilizado antes da especificação do tipo durante a declaração da variável. Assim, o valor inicializado nunca mais poderá ser mudado.
+- dynamic = Ultilizado quando nao quer colocar um valor predefinido na variavel.
+- bool  = ultilizado quando for verdadeiro ou falso (true) ou (false).
+
 
 <details>
     <summary>Exemplo int e double</summary>
 
 ```dart
 main() {
-/* "variável" int "nome da variável" a = "valor" 2; */
+/* "tipo da variavel" int "nome da variável" a = "valor" 2; */
     int a = 2;
-/* "variável" double "nome da variável" b = "valor" 3.1415; */
+/* "tipo da variavel"  double "nome da variável" b = "valor" 3.1415; */
     double b = 3.1415;
 }
 ```
@@ -37,9 +40,9 @@ main() {
     /*"aspas" duplas ou 'aspas' simples sao para tipo string (texto)*/
     var result = "resultado é: ";
     print(result + (n1 + n2).toString());
-    /*.toString retorna o resultado da soma em String*/
+    /*.toString retorna o resultado da soma em String.*/
     print(n1.runtimeType); 
-    /*.runtimeType diz que tipo de variavel é*/
+    /*.runtimeType diz qual é o tipo da variavel.*/
 }
 ```
 </details>
@@ -69,11 +72,39 @@ main() {
     const userName = 'Felipe';
     print(userName);
     userName = 'Richard';
-    // vai da erro devido a variavel username ter recebido const e ja ter valor e nao pode receber um novo valor.
+    // vai da erro devido a variavel username ter recebido const e ja ter valor definido e nao pode receber um novo valor.
 }
 ```
 </details>    
+<details>
+    <summary>Exemplo dynamic</summary>
 
+```dart
+main() {
+    dynamic x = "Felipe";
+    print(x);
+    x = 123;
+    print(x);
+    x = 5.45;
+    print(x);
+    x = false;
+    print(x);
+}
+``` 
+</details>
+<details>
+    <summary>Exemplo Bool</summary>
+
+```dart
+    main() {
+        bool estouComMeuCelular = true;
+        bool pcQuebrado = false;
+        print(estouComMeuCelular || pcQuebrado);
+        //retorna true devido a || ser "ou" nesse caso retorna verdadeiro se tiver uma variavel verdadeira.
+        print(estouComMeuCelular && pcQuebrado);
+        //retorna false devido a && ser "e" nesse caso retorna verdaderio se os dois estiver verdadeiro. 
+    }
+```
 
 
 ## Atualização na entrada do usuário no Dart
