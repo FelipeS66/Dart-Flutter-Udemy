@@ -173,12 +173,9 @@ time.add("Cuiaba");
 //.add() adiciona o objeto no final da lista
 print(time is Set);
 // Retorna true pq e um Set.
-
 }
 ```
-</deteails>
-
-
+</details>
 
 ## Atualização na entrada do usuário no Dart
 - Nas novas versões do Dart, ao salvar valores feitos via Input pelo usuário do código, é necessário utilizar uma exclamação lá no final do método que faz a leitura do que foi digitado pelo usuário.É preciso que fique assim:
