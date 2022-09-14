@@ -105,6 +105,79 @@ main() {
         //retorna false devido a && ser "e" nesse caso retorna verdaderio se os dois estiver verdadeiro. 
     }
 ```
+</details>
+## Tipos Basicos 
+- List
+- Map
+- Set
+
+<details>
+    <summary>Exemplo List</summary>
+
+```dart
+main(){
+    List aprovados = ['Felipe', 'Jonas', 'Savio'];
+    //List sempre começa contando os objetos de 0.
+    print(aprovados[2]);
+    //retorna o valor da lista Savio.
+    print(aprovados.elementAt(1));
+    //retorna o valor da lista Jonas.
+}
+```
+</details>
+<details>
+    <summary>Exemplo Map</summary>
+
+```dart
+main() {
+    //2 jeitos de fazer o map
+    Map<String,String> telefone = {
+        "Felipe": "(65)9984-4568",
+        "Jonas": "(65)9954-4468",
+        "Savio": "(65)9985-4868"
+    };
+    print(telefone['Felipe']);
+    // retorna o valor da chave especificado no objeto telefone.
+    print(telefone.values);
+    // retorna todos os valores do objeto telefone.
+    print(telefone.keys);
+    // retorna todas as chaves do objeto telefone.
+    print(telefone.entries);
+    // retorna chave e valores do objeto telefone.
+    print()
+    var telefone2 = {  
+        "Felipe": "(65)9984-4568",
+        "Jonas": "(65)9954-4468",
+        "Savio": "(65)9985-4868"
+    };
+    // fazendo o objeto do tipo var vai inferir sozinho o tipo do objeto.
+}
+```
+</details>    
+<details>
+    <summary>Exemplo Set</summary>
+
+```dart
+main() {
+// como map ele pode ser feito com var 
+Set<String> time = {"Flamengo", "Palmeiras", "Vasco", "Gremio"};
+// Set nao tem como fazer repetição de objeto.
+print(time);
+print(time.length);
+// retorna a quantidade de objetos no set
+print(time.last);
+// retorna o ultimo objeto.
+print(time.first);
+// retorna o primeiro objeto.
+time.add("Cuiaba");
+//.add() adiciona o objeto no final da lista
+print(time is Set);
+// Retorna true pq e um Set.
+
+}
+```
+</deteails>
+
 
 
 ## Atualização na entrada do usuário no Dart

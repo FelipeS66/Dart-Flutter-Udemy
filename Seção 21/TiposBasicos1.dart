@@ -46,7 +46,8 @@ main() {
   o tipo da chave e do valor. Ele sera inferido automaticamente */
 
   // Set seria um conjunto sem ordem predefinida e sem estar indexida
-  var times = {'flamengo', 'vasco', 'Sao Paulo'};
+  Set<String> times = {'flamengo', 'vasco', 'Sao Paulo'};
+  // Set nao aceita repetição como o List
   print(times);
   print(times.length);
   times.add('palmeiras');
@@ -56,5 +57,4 @@ main() {
   print(times is Set);
   print(times.first); //.first mostra o 1 objeto do Set.
   print(times.last); //.last mostra o ultimo objeto do Set.
-  print(times.length);
 }
