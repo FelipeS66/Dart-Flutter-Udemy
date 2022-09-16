@@ -177,6 +177,80 @@ print(time is Set);
 ```
 </details>
 
+## Funcionalidades Basicas
+- .roundToDouble();
+- .truncateToDouble();
+- .substring();
+- .toUpperCase();
+- .toLowerCase();
+- .padRight();
+
+<details>
+    <summary>Exemplo .roundToDouble();</summary>
+
+```dart
+main() {
+    var keyAluna = 6.99.roundToDouble();
+    print(keyAluna);//retorna 7 pq ele arredonda o valor.
+}
+```
+</details>
+<details>
+    <summary>Exemplo .truncateToDouble();</summary>
+
+```dart
+main() {
+    var keyAluna = 6.99.truncateToDouble();
+    print(keyAluna);
+    //retorna 6 devido a ter retirado as casas decimais
+}
+```
+</details>
+<details>
+    <summary>Exemplo .substring();</summary>
+
+```dart
+main() {
+    var key = 'Namorada';
+    print(key.subString(1,5));
+    //retorna amor.
+}
+```
+</details>
+<details>
+    <summary>Exemplo .toUpperCase();</summary>
+
+```dart
+main() {
+    var key = 'Namorada';
+    print(key.toUpperCase());
+    //retorna NAMORADA.
+}
+```
+</details>
+<details>
+    <summary>Exemplo .toLowerCase();</summary>
+
+```dart
+main() {
+    var key = 'NAMORADA';
+    print(key.toLowerCase());
+    //retorna namorada.
+}
+```
+</details>
+<details>
+    <summary>Exemplo .padRight();</summary>
+
+```dart
+main() {
+    var key = 'Minha ';
+    print(key.padRight(7, 'Namorada'));
+    //retorna Minha Namorada.
+}
+```
+</details>
+
 ## Atualização na entrada do usuário no Dart
 - Nas novas versões do Dart, ao salvar valores feitos via Input pelo usuário do código, é necessário utilizar uma exclamação lá no final do método que faz a leitura do que foi digitado pelo usuário.É preciso que fique assim:
 ```dart
