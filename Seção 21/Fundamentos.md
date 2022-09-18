@@ -1,7 +1,7 @@
 ## Sentença do código Dart
-- Sempre termina com ';'
-- Usa {} para abrir um bloco de código
-- A porta de entrada do Dart e usado o main
+- ***Sempre termina com ';'***
+- ***Usa {} para abrir um bloco de código***
+- ***A porta de entrada do Dart e usado o main***
 #### Exemplos:
 ```dart 
 main() {
@@ -9,13 +9,19 @@ main() {
 }
 ```
 ## Tipo de Variáveis
-- int =  utilizado para o armazenamento de qualquer número inteiro.
-- double = utilizado para o armazenamento de números de pontos flutuantes. 
-- var = vai inferir o valor colocado.
-- final = Uma variável ou atributo final pode ser inicializada em algum momento após a sua declaração, porém uma vez atribuído um valor, este não poderá mais ser alterado.
-- const = Utilizado antes da especificação do tipo durante a declaração da variável. Assim, o valor inicializado nunca mais poderá ser mudado.
-- dynamic = Ultilizado quando nao quer colocar um valor predefinido na variavel.
-- bool  = ultilizado quando for verdadeiro ou falso (true) ou (false).
+- **int** =  *utilizado para o armazenamento de qualquer número inteiro.*
+---
+- **double** = *utilizado para o armazenamento de números de pontos flutuantes.*
+--- 
+- **var** = *vai inferir o valor colocado.*
+---
+- **final** = *Uma variável ou atributo final pode ser inicializada em algum momento após a sua declaração, porém uma vez atribuído um valor, este não poderá mais ser alterado.*
+---
+- **const** = *Utilizado antes da especificação do tipo durante a declaração da variável. Assim, o valor inicializado nunca mais poderá ser mudado.*
+---
+- **dynamic** = *Ultilizado quando nao quer colocar um valor predefinido na variavel.*
+---
+- **bool**  = *ultilizado quando for verdadeiro ou falso (true) ou (false).*
 
 
 <details>
@@ -106,10 +112,15 @@ main() {
     }
 ```
 </details>
+
 ## Tipos Basicos 
-- List
-- Map
-- Set
+
+- **List** = *Como o nome sugere ele faz uma lista usando [].*
+---
+- **Map** = *E que nem o list so que tu cria uma chave e valor usando {'key':'valor'}.* 
+---
+- **Set** = *E que nem o Map usando {} so que usa só objeto que nem o list*
+---
 
 <details>
     <summary>Exemplo List</summary>
@@ -178,15 +189,20 @@ print(time is Set);
 </details>
 
 ## Funcionalidades Basicas
-- .roundToDouble();
-- .truncateToDouble();
-- .substring();
-- .toUpperCase();
-- .toLowerCase();
-- .padRight();
+- ***.roundToDouble(); =*** *Usado para arredondar um valor.*
+---
+- ***.truncateToDouble(); =*** *Usado para tirar as casas decimais.*
+---
+- ***.substring(); =***  *Usado para fazer a subleitura da variavel entr uma indice e o final dela.*
+---
+- ***.toUpperCase(); =*** *Usado para deixar uma String totalmente em letras maiúsculas.*
+---
+- ***.toLowerCase(); =*** *Usado para deixar uma String totalmente em letras minúsculas..*
+---
+- ***.padRight(); =*** *Usado para escrever uma String numa variavel a direita depois de ter especificado a indice onde começar.*
 
 <details>
-    <summary>Exemplo .roundToDouble();</summary>
+    <summary>Exemplo roundToDouble</summary>
 
 ```dart
 main() {
@@ -196,7 +212,7 @@ main() {
 ```
 </details>
 <details>
-    <summary>Exemplo .truncateToDouble();</summary>
+    <summary>Exemplo truncateToDouble</summary>
 
 ```dart
 main() {
@@ -207,7 +223,7 @@ main() {
 ```
 </details>
 <details>
-    <summary>Exemplo .substring();</summary>
+    <summary>Exemplo substring</summary>
 
 ```dart
 main() {
@@ -218,7 +234,7 @@ main() {
 ```
 </details>
 <details>
-    <summary>Exemplo .toUpperCase();</summary>
+    <summary>Exemplo toUpperCase</summary>
 
 ```dart
 main() {
@@ -229,7 +245,7 @@ main() {
 ```
 </details>
 <details>
-    <summary>Exemplo .toLowerCase();</summary>
+    <summary>Exemplo toLowerCase</summary>
 
 ```dart
 main() {
@@ -240,13 +256,162 @@ main() {
 ```
 </details>
 <details>
-    <summary>Exemplo .padRight();</summary>
+    <summary>Exemplo padRight</summary>
 
 ```dart
 main() {
     var key = 'Minha ';
     print(key.padRight(7, 'Namorada'));
     //retorna Minha Namorada.
+}
+```
+</details>
+
+## Operadores Aritméticos e Lógicos
+#### Aritméticos 
+- **( + )** :*Faz cálculos de adição.*
+- **( - )** :*Faz cálculos subtração.*
+- **( * )** :*Faz cálculos  multiplicação.*
+- **( / )** :*Faz cálculos divisão.*
+<details>
+    <summary>Exemplo Adição</summary>
+
+```dart 
+main() {
+    int a = 5;
+    int b = 6;
+    print(a + b);
+    //retorna o valor -> 11
+}
+```
+</details>
+<details>
+    <summary>Exemplo Subtração</summary>
+
+```dart
+main() {
+    int a = 8;
+    int b = 6;
+    print(a - b);
+    //retorna o valor -> 2 
+```
+</details>
+<details>
+    <summary>Exemplo Multiplicação</summary>
+
+```dart
+main() {
+    int a = 5;
+    int b = 5;
+    print(a * b);
+    //retorna o valor -> 25 
+```
+</details>
+<details>
+    <summary>Exemplo Divisão</summary>
+
+```dart
+main() {
+    int a = 10;
+    int b = 2;
+    print(a / b);
+    //retorna o valor -> 5 
+```
+</details>
+
+#### Lógicos
+- **(&&)**:*And para a conjunção lógica 'E' retorna verdadeiro quando os dois valores de entrada passados para ele são verdadeiros, caso contrário ele retorna falso.*
+---
+- **(||)**:*Or para a disjunção lógica 'Ou' retorna verdadeiro quando um ou outro valor de entrada é verdadeiro e também quando os dois valores são verdadeiros. Ele só retorna falso quando os dois valores de entrada são falsos.*
+---
+- **(^)**:*Xor para a disjunção lógica 'OU Exclusivo' retornar verdadeiro quando um dos dois valores é verdadeiro, porém retorna falso se os 2 valores forem verdadeiro. Ele também retorna falso se os dois valores de entrada forem falsos.*
+---
+- **(!)**:*Not para a negação lógica 'Não' diferente dos demais que vimos até agora, realiza uma operação sobre um único valor. Se o valor for verdadeiro ele retorna falso e se o valor for falso ele retorna verdadeiro.*
+---
+- **(!!)**:*Not2x ou Negação Dupla é parecido com o operador Not só que nega duas vezes, acaba ficando com o valor original.*
+
+<details>
+    <summary>Exemplo &&</summary>
+
+```dart
+main() {
+    bool ehCaro = true;
+    bool ehFragil = true;
+    print(ehCaro && ehFragil);
+    //retorna true 
+    bool estaFrio = true;
+    bool estaQuente = false;
+    print(estaFrio && estaQuente);
+    //retorna false
+}
+```
+</details>
+<details>
+    <summary>Exemplo !!</summary>
+
+```dart
+main() {
+    bool ehCaro = true;
+    bool ehFragil = true;
+    print(ehCaro || ehFragil);
+    //retorna true.
+    bool estaFrio = true;
+    bool estaQuente = false;
+    print(estaFrio || estaQuente);
+    //retorna true.
+    bool eh22 = false;
+    bool eh23 = false;
+    print(eh22 || eh23);
+    //retorna false.
+}
+```
+</details>
+<details>
+    <summary>Exemplo ^</summary>
+
+```dart
+main() {
+    bool ehCaro = true;
+    bool ehFragil = true;
+    print(ehCaro ^ ehFragil);
+    //retorna false.
+    bool estaFrio = true;
+    bool estaQuente = false;
+    print(estaFrio ^ estaQuente);
+    //retorna true.
+    bool eh22 = false;
+    bool eh23 = false;
+    print(eh22 || eh23);
+    //retorna false.
+}
+```
+</details>
+<details>
+    <summary>Exemplo !</summary>
+
+```dart
+main() {
+    bool ehCaro = true;
+    bool ehFragil = false;
+    print(!ehCaro);
+    //retorna false.
+    print(!ehFragil);
+    //retorna true
+}
+```
+</details>
+
+<details>
+    <summary>Exemplo !!</summary>
+
+```dart
+main() {
+    bool ehCaro = true;
+    bool ehFragil = false;
+    print(!!ehCaro);
+    //retorna true.
+    print(!!ehFragil);
+    //retorna false.
 }
 ```
 </details>
