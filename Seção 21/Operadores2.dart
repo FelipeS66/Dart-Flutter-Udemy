@@ -20,12 +20,10 @@ main() {
   print(3 != 3); // 3 diferente de 3 'false'
   print(3 == 3); // 3 e igual a 3 'true'
   print(3 == '3'); // da false pq o tipo e diferente um e int e o outro String.
-
   print(2 + 5 > 3 - 1 && 4 + 7 != 7 - 4);
   // 2+5=7 3-1=2 7>2 = True
   // 4+7=11 7-4=3 11!=3 = True
   // True && True = True
-
   print(5 & 4);
   // 101 = 5
   // 100 = 4
