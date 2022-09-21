@@ -454,6 +454,37 @@ main(){
   // 100 = 4
 }
 ```
+## Interpolação
+- usado para deixar o codigo mais simplificado e entendivel.
+```dart
+main() {
+var nome = 'Felipe';
+  var status = 'Aprovado';
+  double nota = 953.1;
+  var resultado1 =nome + " tirou a nota " + nota.toString() + " é foi " + status + " em matematica no Enem";
+  var interpolado ='$nome tirou a nota $nota é foi $status em matematica no Enem';
+  print(resultado1);
+  print(interpolado);
+}   
+```
+## Generics
+- Generics seria tu meio que especificar um tipo no Map, List ou Set.
+- tu vai identificar o generics assim **<'tipo'>**
+```dart
+main(){
+    List<String> compras = ['Miojo', 'Arroz', 'Sardinha'];
+  //compras1.add(15); // vai dar erro pq compras so aceita do tipo String.
+  compras.add('Frango Frito'); // O certo seria assim.
+  print(compras);
+  Map<int, String> time = {1: 'Flamengo', 2: 'Palmeiras', 3: 'Vasco'};
+  time.addAll({4: 'Botafogo'});
+  // para adicionar no Map usar .addAll({key:value});
+  print(time);
+  time.remove(2);
+  // para remover no Map usar .remove(key);
+  print(time);
+} 
+```
 
 ## Atualização na entrada do usuário no Dart
 - Nas novas versões do Dart, ao salvar valores feitos via Input pelo usuário do código, é necessário utilizar uma exclamação lá no final do método que faz a leitura do que foi digitado pelo usuário.É preciso que fique assim:

@@ -40,6 +40,7 @@ main() {
   bool estaChovendo = true; //bool tipo basico para verdadeiro ou false
   bool muitoFrio = false;
 
+  // ignore: dead_code
   print(estaChovendo || muitoFrio); //retornara true pq estaChovendo e true.
   print(estaChovendo && muitoFrio); //retornara false pq muito frio e false
 /* || significa ou (estaChovendo ou muitoFrio como em um dos dois tem true 
